@@ -19,6 +19,7 @@ module.exports = {
         watchMode: !isProd,
         overlayDrafts: !isProd
       }
-    }
+    },
+    'gatsby-plugin-preact'
   ]
 }
