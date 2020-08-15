@@ -6,7 +6,7 @@ export function cn (...args) {
 
 export function mapEdgesToNodes (data) {
   if (!data.edges) return []
-  return data.edges.map(edge => edge.node)
+  return data.edges.map((edge) => edge.node)
 }
 
 export function filterOutDocsWithoutSlugs ({slug}) {
@@ -37,11 +37,11 @@ export function toPlainText (blocks) {
     return ''
   }
   return blocks
-    .map(block => {
+    .map((block) => {
       if (block._type !== 'block' || !block.children) {
         return ''
       }
-      return block.children.map(child => child.text).join('')
+      return block.children.map((child) => child.text).join('')
     })
     .join('\n\n')
 }

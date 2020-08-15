@@ -57,13 +57,19 @@ export const query = graphql`
   }
 `
 
-const BlogPostTemplate = props => {
+const BlogPostTemplate = (props) => {
   const {data, errors} = props
   const post = data && data.post
   return (
     <Layout>
       {errors && <SEO title='GraphQL Error' />}
-      {post && <SEO title={post.title || 'Untitled'} description={toPlainText(post._rawExcerpt)} image={post.mainImage} />}
+      {post && (
+        <SEO
+          title={post.title || 'Untitled'}
+          description={toPlainText(post._rawExcerpt)}
+          image={post.mainImage}
+        />
+      )}
 
       {errors && (
         <Container>

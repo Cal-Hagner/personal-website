@@ -11,9 +11,7 @@ async function createBlogPostPages (graphql, actions) {
   const {createPage} = actions
   const result = await graphql(`
     {
-      allSanityPost(
-        filter: { slug: { current: { ne: null } }, publishedAt: { ne: null } }
-      ) {
+      allSanityPost(filter: {slug: {current: {ne: null}}, publishedAt: {ne: null}}) {
         edges {
           node {
             id
@@ -32,7 +30,7 @@ async function createBlogPostPages (graphql, actions) {
   const postEdges = (result.data.allSanityPost || {}).edges || []
 
   postEdges
-    .filter(edge => !isFuture(edge.node.publishedAt))
+    .filter((edge) => !isFuture(edge.node.publishedAt))
     .forEach((edge, index) => {
       const {id, slug = {}, publishedAt} = edge.node
       const dateSegment = format(publishedAt, 'YYYY/MM')
