@@ -9,7 +9,7 @@ import {toPlainText} from '../lib/helpers'
 
 export const query = graphql`
   query BlogPostTemplateQuery($id: String!) {
-    post: sanityPost(id: {eq: $id}) {
+    post: sanityPost(id: { eq: $id }) {
       id
       publishedAt
       categories {
@@ -24,8 +24,8 @@ export const query = graphql`
       slug {
         current
       }
-      _rawExcerpt(resolveReferences: {maxDepth: 5})
-      _rawBody(resolveReferences: {maxDepth: 5})
+      _rawExcerpt(resolveReferences: { maxDepth: 5 })
+      _rawBody(resolveReferences: { maxDepth: 5 })
       authors {
         _key
         author {
