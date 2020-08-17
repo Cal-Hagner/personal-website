@@ -5,10 +5,10 @@ import {
   filterOutDocsWithoutSlugs,
   filterOutDocsPublishedInTheFuture
 } from '../lib/helpers'
-import BlogPostPreviewList from '../components/blog-post-preview-list'
-import Container from '../components/container'
+import BlogPostPreviewList from '../components/blog-posts/blog-post-preview-list'
+import Container from '../components/container/container'
 import GraphQLErrorList from '../components/graphql-error-list'
-import SEO from '../components/seo'
+import SEO from '../components/seo/seo'
 import Layout from '../containers/layout'
 
 export const query = graphql`
@@ -92,7 +92,6 @@ const IndexPage = (props) => {
     <Layout>
       <SEO title={site.title} description={site.description} keywords={site.keywords} />
       <Container>
-        <h1 hidden>Welcome to {site.title}</h1>
         {postNodes && (
           <BlogPostPreviewList
             title='Latest blog posts'
