@@ -41,6 +41,7 @@
     "gatsby-plugin-preact": "^4.0.9",
     "gatsby-plugin-sitemap": "^2.4.11",
     "preact": "^10.4.7",
-    "preact-render-to-string": "^5.1.10"
+    "preact-render-to-string": "^5.1.10",
+    "react-headroom": "^3.0.0"
   }
 }
