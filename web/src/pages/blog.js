@@ -49,7 +49,7 @@ const ArchivePage = (props) => {
 
   return (
     <Layout>
-      <SEO title='Archive' />
+      <SEO title='Blog' />
       <Container>
         <h1 className={responsiveTitle1}>Archive</h1>
         {postNodes && postNodes.length > 0 && <BlogPostPreviewGrid nodes={postNodes} />}
