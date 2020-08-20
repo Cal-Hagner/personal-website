@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from '../header/header';
 import Headroom from 'react-headroom';
-import EmailIcon from '@material-ui/icons/Email';
 
 import '../../styles/layout.css';
 import styles from './layout.module.css';
