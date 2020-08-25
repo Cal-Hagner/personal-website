@@ -25,6 +25,12 @@ export default function Header({ onHideNav, onShowNav, showNav, siteTitle }) {
             <li>
               <Link to='/blog/'>Blog</Link>
             </li>
+            <li>
+              <Link to='/'>Projects</Link>
+            </li>
+            <li>
+              <Link to='/'>About</Link>
+            </li>
           </ul>
         </nav>
       </div>
