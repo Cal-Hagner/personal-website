@@ -2,12 +2,13 @@
   --font-family-sans: -apple-system, BlinkMacSystemFont, sans-serif;
 
   --color-black: #202123;
-  --color-dark-gray: #32373e;
+  --color-dark-gray: #263033;
   --color-gray: #697a90;
   --color-light-gray: #b4bcc7;
   --color-very-light-gray: #e7ebed;
   --color-white: #fff;
-  --color-accent: #ffd000;
+  --color-accent: #18e4ff;
+  --color-main: #cca700;
 
   /* Typography */
   --unit: 16;
