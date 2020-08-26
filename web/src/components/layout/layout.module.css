@@ -15,7 +15,7 @@
   background: var(--color-white);
 
   @nest & a {
-    color: inherit;
+    color: var(--color-main);
     text-decoration: none;
 
     @media (hover: hover) {
@@ -39,7 +39,7 @@
 
 .siteInfo {
   text-align: center;
-  color: var(--color-main);
+  color: var(--color-black);
   font-size: var(--font-small-size);
   line-height: var(--font-small-line-height);
   padding: 1rem;

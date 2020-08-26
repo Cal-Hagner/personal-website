@@ -14,7 +14,7 @@ const Layout = ({ children, onHideNav, onShowNav, showNav, siteTitle }) => (
     <footer className={styles.footer}>
       <div className={styles.footerWrapper}>
         <div className={styles.siteInfo}>
-          Powered by <a>Sanity</a> and <a>Gatsby</a>
+          Powered by <a>Sanity</a> and <a>Gatsby</a>.
         </div>
         <div className={styles.siteInfo}>&copy; {new Date().getFullYear()} Caleb Hagner</div>
       </div>
