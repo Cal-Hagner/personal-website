@@ -10,6 +10,7 @@ import Container from '../components/container/container';
 import GraphQLErrorList from '../components/graphql-error-list';
 import SEO from '../components/seo/seo';
 import Layout from '../containers/layout';
+import styles from './index.module.css';
 
 export const query = graphql`
   fragment SanityImage on SanityMainImage {
@@ -91,6 +92,14 @@ const IndexPage = (props) => {
   return (
     <Layout>
       <SEO title={site.title} description={site.description} keywords={site.keywords} />
+      <div className={styles.mainContent}>
+        Welcome to my corner of the Internet! My name is Caleb Hagner. You can{' '}
+        <a href='https://github.com/Cal-Hagner' target='_blank' rel='noreferrer'>
+          check out my work on GitHub
+        </a>
+        , <a href='mailto:caleb.hagner@pm.me'>send me a quick email</a>, or{' '}
+        <a href='/archive/'>read some of my scribbled thoughts</a>.
+      </div>
       <Container>
         {postNodes && (
           <BlogPostPreviewList title='Latest posts' nodes={postNodes} browseMoreHref='/archive/' />
