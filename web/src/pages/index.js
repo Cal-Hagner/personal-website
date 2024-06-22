@@ -95,9 +95,7 @@ const IndexPage = (props) => {
       <div className={styles.mainContent}>
         Welcome to my corner of the Internet! My name is Caleb Hagner. You can{' '}
         <a href='https://github.com/Cal-Hagner' target='_blank' rel='noreferrer'>
-          check out my work on GitHub
-        </a>
-        , <a href='mailto:caleb.hagner@pm.me'>send me a quick email</a>, or{' '}
+          check out my work on GitHub</a> or{' '}
         <a href='/archive/'>read some of my scribbled thoughts</a>.
       </div>
       <Container>
