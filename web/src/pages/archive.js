@@ -34,7 +34,7 @@ export const query = graphql`
   }
 `;
 
-const ArchivePage = (props) => {
+const BlogPage = (props) => {
   const { data, errors } = props;
 
   if (errors) {
@@ -51,11 +51,11 @@ const ArchivePage = (props) => {
     <Layout>
       <SEO title='Blog' />
       <Container>
-        <h1 className={responsiveTitle1}>Archive</h1>
+        <h1 className={responsiveTitle1}>Writing</h1>
         {postNodes && postNodes.length > 0 && <BlogPostPreviewGrid nodes={postNodes} />}
       </Container>
     </Layout>
   );
 };
 
-export default ArchivePage;
+export default BlogPage;
