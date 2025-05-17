@@ -94,7 +94,8 @@ const IndexPage = (props) => {
       <SEO title={site.title} description={site.description} keywords={site.keywords} />
       <div className={styles.mainContent}>
         Candidate for BSEnvE in Environmental and Chemical Engineering at Northeastern University.
-
+        <br></br>
+        <br></br>
         I like tinkering with antique power tools, dumpster diving for usable wood scraps, and reading anything that was ever written. You can{' '}
         <a href='https://github.com/Cal-Hagner' target='_blank' rel='noreferrer'>
           check out my work on GitHub</a> or{' '}
