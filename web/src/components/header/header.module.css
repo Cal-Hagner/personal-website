@@ -78,7 +78,7 @@
 
   @media (hover: hover) {
     @nest & ul li a:hover {
-      color: var(--color-accent);
+      font-weight: 800;
     }
   }
 
